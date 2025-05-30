@@ -10,7 +10,7 @@
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
     crossorigin="anonymous"
   />
-  <!-- Bootstrap Icons - アイコンフォントライブラリ（必要に応じて使用） -->
+  <!-- Bootstrap Icons - アイコンフォントライブラリ -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -24,7 +24,7 @@
     <div class="container">
       <!-- ロゴを中央揃えで配置 - text-centerクラスでテキストやインライン要素を中央揃え -->
       <div class="text-center">
-        <a href="https://eneos-ss.com/search/ss/pc/detail.php?SCODE=206965">
+        <a href="https://eneos-ss.com/search/ss/pc/detail.php?SCODE=206965" target="_blank" rel="noopener noreferrer">
           <!-- img-fluidクラス：レスポンシブ対応の画像表示（親要素の幅に合わせて自動調整） -->
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/5/54/ENEOS_logo.svg"
@@ -337,18 +337,18 @@
             <div class="col-md-6 mb-3">
               <!-- img-fluid：レスポンシブ画像、rounded：角丸表示 -->
               <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/shop/image-shop.jpg"
+                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/shop/shop.jpg"
                 class="img-fluid rounded"
                 alt="店舗画像"
               />
             </div>
             <!-- 全幅の画像表示部分 -->
             <div class="col-12 mt-3">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/staff/staff-004.jpg"
-                class="img-fluid rounded"
-                alt="スタッフ画像"
-              />
+              <!--                <img-->
+              <!--                  src=""-->
+              <!--                  class="img-fluid rounded"-->
+              <!--                  alt="スタッフ画像"-->
+              <!--                />-->
             </div>
           </div>
         </div>
@@ -363,12 +363,37 @@
           <h3 class="mb-3">Menu</h3>
           <div class="row">
             <!-- フルワイドのカードレイアウト -->
-            <div class="col-md-12">
+            <div class="col-md-12 mb-3">
+              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/fresh-keeper/A-11.jpg"
+                  alt="フレッシュキーパー"
+                  class="img-fluid card-img-top"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <p class="card-title text-info fw-bold h4 mb-0">
+                    フレッシュキーパー
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fresh"
+                  >
+                    詳しく見る
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 mb-3">
               <!-- カードコンポーネント：画像とテキストを組み合わせた表示 -->
-              <div class="card mb-3">
+              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
                 <!-- card-img-top：カード上部に表示する画像 -->
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/A-CK.jpg"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/crystal-keeper/A-06.jpg"
                   alt="クリスタルキーパー"
                   class="img-fluid card-img-top"
                 />
@@ -397,35 +422,10 @@
               </div>
             </div>
 
-            <div class="col-md-12">
-              <div class="card mb-3">
+            <div class="col-md-12 mb-3">
+              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/A-FK.jpg"
-                  alt="フレッシュキーパー"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex justify-content-between align-items-center"
-                >
-                  <p class="card-title text-info fw-bold h4 mb-0">
-                    フレッシュキーパー
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#fresh"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-12">
-              <div class="card mb-3">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/A-DK.jpg"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/diamond-keeper/A-04.jpg"
                   alt="ダイヤモンドキーパー"
                   class="img-fluid card-img-top"
                 />
@@ -447,10 +447,10 @@
               </div>
             </div>
 
-            <div class="col-md-12">
-              <div class="card mb-3">
+            <div class="col-md-12 mb-3">
+              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/A-ED.jpg"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/eco-diamond-keeper/A-02.jpg"
                   alt="エコダイヤキーパー"
                   class="img-fluid card-img-top"
                 />
@@ -475,9 +475,9 @@
             <!-- 2カラムレイアウトの1つ目 -->
             <div class="col-md-6 mb-3">
               <!-- h-100：親要素の高さ100%（カードの高さを揃えるために追加） -->
-              <div class="card mb-3 h-100">
+              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/teppun002.jpg"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/iron-removal/teppun002.jpg"
                   alt="鉄粉取り"
                   class="img-fluid card-img-top"
                 />
@@ -487,7 +487,7 @@
                 <div
                   class="card-body d-flex flex-column align-items-center justify-content-between"
                 >
-                  <p class="card-title fw-bold h5 mb-3">鉄粉取り価格</p>
+                  <p class="card-title fw-bold h5 mb-3">鉄粉取り</p>
                   <button
                     type="button"
                     class="btn btn-secondary"
@@ -501,16 +501,16 @@
             </div>
 
             <div class="col-md-6 mb-3">
-              <div class="card mb-3 h-100">
+              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/A-CW.jpg"
-                  alt="極上手洗い洗車"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/premium-hand-car-wash/A-08.jpg"
+                  alt="手洗い洗車"
                   class="img-fluid card-img-top"
                 />
                 <div
                   class="card-body d-flex flex-column align-items-center justify-content-between"
                 >
-                  <p class="card-title fw-bold h5 mb-3">極上手洗い洗車</p>
+                  <p class="card-title fw-bold h5 mb-3">手洗い洗車</p>
                   <button
                     type="button"
                     class="btn btn-secondary"
@@ -524,17 +524,17 @@
             </div>
 
             <div class="col-md-6 mb-3">
-              <div class="card mb-3 h-100">
+              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/C-windw.jpg"
-                  alt="フッ素ガラスコーティング"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/super-water-repellent-window-coating/A-16.jpg"
+                  alt="超撥水ウィンドウコーティング"
                   class="img-fluid card-img-top"
                 />
                 <div
                   class="card-body d-flex flex-column align-items-center justify-content-between"
                 >
                   <p class="card-title fw-bold h5 mb-3">
-                    フッ素ガラスコーティング
+                    超撥水ウィンドウコーティング
                   </p>
                   <button
                     type="button"
@@ -549,9 +549,9 @@
             </div>
 
             <div class="col-md-6 mb-3">
-              <div class="card mb-3 h-100">
+              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/clean002.jpg"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/interior-cleaning/clean-01.jpg"
                   alt="車内清掃"
                   class="img-fluid card-img-top"
                 />
@@ -572,9 +572,9 @@
             </div>
 
             <div class="col-md-6 mb-3">
-              <div class="card mb-3 h-100">
+              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/C-wheel.jpg"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/wheel-coating/A-12.jpg"
                   alt="ホイールコーティング"
                   class="img-fluid card-img-top"
                 />
@@ -582,7 +582,7 @@
                   class="card-body d-flex flex-column align-items-center justify-content-between"
                 >
                   <p class="card-title fw-bold h5 mb-3">
-                    ホイールコーティング価格
+                    ホイールコーティング
                   </p>
                   <button
                     type="button"
@@ -597,17 +597,17 @@
             </div>
 
             <div class="col-md-6 mb-3">
-              <div class="card mb-3 h-100">
+              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/C-head.jpg"
-                  alt="ヘッドライトクリーニング"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/lens-coating/A-13.jpg"
+                  alt="レンズコーティング"
                   class="img-fluid card-img-top"
                 />
                 <div
                   class="card-body d-flex flex-column align-items-center justify-content-between"
                 >
                   <p class="card-title h5 fw-bold mb-3">
-                    ヘッドライトクリーニング価格
+                    レンズコーティング
                   </p>
                   <button
                     type="button"
@@ -624,7 +624,97 @@
           <!-- /下段 -->
 
           <!-- モーダルの詳細情報セクション -->
-          <!-- モーダル01：クリスタルキーパー詳細情報 -->
+          <!-- モーダル01：フレッシュキーパー詳細情報 -->
+          <div
+            class="modal fade"
+            id="fresh"
+            tabindex="-1"
+            aria-labelledby="fresh-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-info fw-bold" id="fresh-label">
+                    フレッシュキーパー
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <img
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/fresh-keeper/A-21.jpg"
+                      class="img-fluid mb-3"
+                      alt="フレッシュキーパー詳細"
+                    />
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>サイズ</th>
+                          <th>価格</th>
+                          <th>車の種類</th>
+                        </tr>
+                      </thead>
+                      <!-- フレッシュキーパーの価格 -->
+                      <tbody>
+                        <tr>
+                          <td>SSサイズ</td>
+                          <td>&yen;28,700</td>
+                          <td>ワゴンR、ムーブetc</td>
+                        </tr>
+                        <tr>
+                          <td>Sサイズ</td>
+                          <td>&yen;30,900</td>
+                          <td>アクア、フィットetc</td>
+                        </tr>
+                        <tr>
+                          <td>Mサイズ</td>
+                          <td>&yen;33,300</td>
+                          <td>プリウス、インサイトetc</td>
+                        </tr>
+                        <tr>
+                          <td>Lサイズ</td>
+                          <td>&yen;35,500</td>
+                          <td>プリウスα、ウィッシュetc</td>
+                        </tr>
+                        <tr>
+                          <td>LLサイズ</td>
+                          <td>&yen;40,300</td>
+                          <td>ヴェルファイヤ、エルグランドetc</td>
+                        </tr>
+                        <tr>
+                          <td>XLサイズ</td>
+                          <td>¥45,000</td>
+                          <td>
+                            ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
+                          </td>
+                        </tr>
+                      </tbody>
+                      <!-- /フレッシュキーパーの価格終了 -->
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    閉じる
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- モーダル02：クリスタルキーパー詳細情報 -->
           <div
             class="modal fade"
             id="crystal"
@@ -655,7 +745,7 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/A.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/crystal-keeper/B-01.jpg"
                       class="img-fluid mb-3"
                       alt="クリスタルキーパー詳細"
                     />
@@ -674,32 +764,32 @@
                       <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>¥18,200</td>
+                          <td>&yen;18,200</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>¥20,400</td>
+                          <td>&yen;20,400</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>¥22,800</td>
+                          <td>&yen;22,800</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>¥25,000</td>
+                          <td>&yen;25,000</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>¥29,800</td>
+                          <td>&yen;29,800</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                         <tr>
                           <td>XLサイズ</td>
-                          <td>¥34,500</td>
+                          <td>&yen;34,500</td>
                           <td>
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
@@ -710,96 +800,6 @@
                   </div>
                 </div>
                 <!-- モーダルフッター：閉じるボタンなど -->
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- モーダル02：フレッシュキーパー詳細情報 -->
-          <div
-            class="modal fade"
-            id="fresh"
-            tabindex="-1"
-            aria-labelledby="fresh-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title text-info fw-bold" id="fresh-label">
-                    フレッシュキーパー
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/B-FK.jpg"
-                      class="img-fluid mb-3"
-                      alt="フレッシュキーパー詳細"
-                    />
-                  </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>サイズ</th>
-                          <th>価格</th>
-                          <th>車の種類</th>
-                        </tr>
-                      </thead>
-                      <!-- フレッシュキーパーの価格 -->
-                      <tbody>
-                        <tr>
-                          <td>SSサイズ</td>
-                          <td>¥28,700</td>
-                          <td>ワゴンR、ムーブetc</td>
-                        </tr>
-                        <tr>
-                          <td>Sサイズ</td>
-                          <td>¥30,900</td>
-                          <td>アクア、フィットetc</td>
-                        </tr>
-                        <tr>
-                          <td>Mサイズ</td>
-                          <td>¥33,300</td>
-                          <td>プリウス、インサイトetc</td>
-                        </tr>
-                        <tr>
-                          <td>Lサイズ</td>
-                          <td>¥35,500</td>
-                          <td>プリウスα、ウィッシュetc</td>
-                        </tr>
-                        <tr>
-                          <td>LLサイズ</td>
-                          <td>¥40,300</td>
-                          <td>ヴェルファイヤ、エルグランドetc</td>
-                        </tr>
-                        <tr>
-                          <td>XLサイズ</td>
-                          <td>¥45,000</td>
-                          <td>
-                            ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
-                          </td>
-                        </tr>
-                      </tbody>
-                      <!-- /フレッシュキーパーの価格終了 -->
-                    </table>
-                  </div>
-                </div>
                 <div class="modal-footer">
                   <button
                     type="button"
@@ -840,7 +840,7 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/DK.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/diamond-keeper/B-02.jpg"
                       class="img-fluid mb-3"
                       alt="ダイヤモンドキーパー詳細"
                     />
@@ -858,32 +858,32 @@
                       <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>¥52,300</td>
+                          <td>&yen;52,300</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>¥57,800</td>
+                          <td>&yen;57,800</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>¥63,400</td>
+                          <td>&yen;63,400</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>¥67,600</td>
+                          <td>&yen;67,600</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>¥74,400</td>
+                          <td>&yen;74,400</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                         <tr>
                           <td>XLサイズ</td>
-                          <td>¥95,200</td>
+                          <td>&yen;95,200</td>
                           <td>
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
@@ -930,7 +930,7 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/B-ED.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/eco-diamond-keeper/A-22.jpg"
                       class="img-fluid mb-3"
                       alt="エコダイヤキーパー詳細"
                     />
@@ -948,32 +948,32 @@
                       <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>¥75,800</td>
+                          <td>&yen;75,800</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>¥83,800</td>
+                          <td>&yen;83,800</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>¥91,900</td>
+                          <td>&yen;91,900</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>¥97,800</td>
+                          <td>&yen;97,800</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>¥108,000</td>
+                          <td>&yen;108,000</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                         <tr>
                           <td>XLサイズ</td>
-                          <td>¥137,900</td>
+                          <td>&yen;137,900</td>
                           <td>
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
@@ -996,7 +996,7 @@
             </div>
           </div>
 
-          <!-- モーダル05：鉄粉取り価格詳細情報 -->
+          <!-- モーダル05：鉄粉取り詳細情報 -->
           <div
             class="modal fade"
             id="iron-powder"
@@ -1008,7 +1008,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title fw-bold" id="iron-powder-label">
-                    鉄粉取り価格
+                    鉄粉取り
                   </h5>
                   <button
                     type="button"
@@ -1020,7 +1020,7 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/img-option-05.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/iron-removal/img-option-05.jpg"
                       class="img-fluid mb-3"
                       alt="鉄粉取り詳細"
                     />
@@ -1038,27 +1038,27 @@
                       <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>¥4,400</td>
+                          <td>&yen;4,400</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>¥4,400</td>
+                          <td>&yen;4,400</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>¥5,500</td>
+                          <td>&yen;5,500</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>¥6,600</td>
+                          <td>&yen;6,600</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>¥7,700</td>
+                          <td>&yen;7,700</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                       </tbody>
@@ -1079,7 +1079,7 @@
             </div>
           </div>
 
-          <!-- モーダル06：極上手洗い洗車詳細情報 -->
+          <!-- モーダル06：手洗い洗車詳細情報 -->
           <div
             class="modal fade"
             id="hand-wash"
@@ -1091,7 +1091,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title fw-bold" id="hand-wash-label">
-                    極上手洗い洗車
+                    手洗い洗車
                   </h5>
                   <button
                     type="button"
@@ -1103,9 +1103,9 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/item1_1.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/premium-hand-car-wash/B-06.jpg"
                       class="img-fluid mb-3"
-                      alt="極上手洗い洗車詳細"
+                      alt="手洗い洗車詳細"
                     />
                   </div>
                   <div class="table-responsive">
@@ -1117,42 +1117,42 @@
                           <th>車の種類</th>
                         </tr>
                       </thead>
-                      <!-- 極上手洗い洗車の価格 -->
+                      <!-- 手洗い洗車の価格 -->
                       <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>¥2,740</td>
+                          <td>&yen;2,740</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>¥2,950</td>
+                          <td>&yen;2,950</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>¥3,290</td>
+                          <td>&yen;3,290</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>¥3,640</td>
+                          <td>&yen;3,640</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>¥4,090</td>
+                          <td>&yen;4,090</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                         <tr>
                           <td>XLサイズ</td>
-                          <td>¥4,910</td>
+                          <td>&yen;4,910</td>
                           <td>
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
                         </tr>
                       </tbody>
-                      <!-- /極上手洗い洗車の価格終了 -->
+                      <!-- /手洗い洗車の価格終了 -->
                     </table>
                   </div>
                 </div>
@@ -1169,7 +1169,7 @@
             </div>
           </div>
 
-          <!-- モーダル07：フッ素ガラスコーティング詳細情報 -->
+          <!-- モーダル07：超撥水ウィンドウコーティング詳細情報 -->
           <div
             class="modal fade"
             id="fluorine"
@@ -1181,7 +1181,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title fw-bold" id="fluorine-label">
-                    フッ素ガラスコーティング
+                    超撥水ウィンドウコーティング
                   </h5>
                   <button
                     type="button"
@@ -1193,9 +1193,9 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/C-windw.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/super-water-repellent-window-coating/B-09.jpg"
                       class="img-fluid mb-3"
-                      alt="フッ素ガラスコーティング詳細"
+                      alt="超撥水ウィンドウコーティング詳細"
                     />
                   </div>
 
@@ -1214,32 +1214,32 @@
                       <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>¥3,720</td>
+                          <td>&yen;3,720</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>¥3,720</td>
+                          <td>&yen;3,720</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>¥3,720</td>
+                          <td>&yen;3,720</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>¥3,960</td>
+                          <td>&yen;3,960</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>¥3,960</td>
+                          <td>&yen;3,960</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                         <tr>
                           <td>XLサイズ</td>
-                          <td>¥3,960</td>
+                          <td>&yen;3,960</td>
                           <td>
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
@@ -1263,32 +1263,32 @@
                       <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>¥8,270</td>
+                          <td>&yen;8,270</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>¥8,270</td>
+                          <td>&yen;8,270</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>¥8,270</td>
+                          <td>&yen;8,270</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>¥9,060</td>
+                          <td>&yen;9,060</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>¥9,060</td>
+                          <td>&yen;9,060</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                         <tr>
                           <td>XLサイズ</td>
-                          <td>¥9,860</td>
+                          <td>&yen;9,860</td>
                           <td>
                             ハイエース(ロングハイルーフ)、ハイラックス、X7etc
                           </td>
@@ -1335,7 +1335,7 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/clean.jpg"
+                      src="images/keeper/interior-cleaning/clean-02.jpg"
                       class="img-fluid mb-3"
                       alt="車内清掃詳細"
                     />
@@ -1352,15 +1352,15 @@
                       <tbody>
                         <tr>
                           <td>1列</td>
-                          <td>¥1,100</td>
+                          <td>&yen;1,100</td>
                         </tr>
                         <tr>
                           <td>2列</td>
-                          <td>¥1,980</td>
+                          <td>&yen;1,980</td>
                         </tr>
                         <tr>
                           <td>3列</td>
-                          <td>¥2,680</td>
+                          <td>&yen;2,680</td>
                         </tr>
                       </tbody>
                       <!-- /車内清掃の価格終了 -->
@@ -1392,7 +1392,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title fw-bold" id="wheel-label">
-                    ホイールコーティング施工価格
+                    ホイールコーティング施工
                   </h5>
                   <button
                     type="button"
@@ -1404,7 +1404,7 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/C-wheel.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/wheel-coating/B-08.jpg"
                       class="img-fluid mb-3"
                       alt="ホイールコーティング詳細"
                     />
@@ -1421,15 +1421,15 @@
                       <tbody>
                         <tr>
                           <td>～15インチ</td>
-                          <td>¥10,700</td>
+                          <td>&yen;10,700</td>
                         </tr>
                         <tr>
                           <td>16～19インチ</td>
-                          <td>¥12,100</td>
+                          <td>&yen;12,100</td>
                         </tr>
                         <tr>
                           <td>20インチ～</td>
-                          <td>¥14,300</td>
+                          <td>&yen;14,300</td>
                         </tr>
                       </tbody>
                       <!-- /ホイールコーティングの価格終了 -->
@@ -1449,7 +1449,7 @@
             </div>
           </div>
 
-          <!-- モーダル10：ヘッドライトクリーニング施工詳細情報 -->
+          <!-- モーダル10：レンズコーティング施工詳細情報 -->
           <div
             class="modal fade"
             id="headlight"
@@ -1461,7 +1461,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title fw-bold" id="headlight-label">
-                    ヘッドライトクリーニング施工価格
+                    レンズコーティング施工
                   </h5>
                   <button
                     type="button"
@@ -1473,9 +1473,9 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/C-head.jpg"
+                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/lens-coating/B-10.jpg"
                       class="img-fluid mb-3"
-                      alt="ヘッドライトクリーニング詳細"
+                      alt="レンズコーティング詳細"
                     />
                   </div>
                   <p>
@@ -1507,7 +1507,9 @@
 
           <!-- 実績情報カード -->
           <!-- w-75：幅75%、mx-auto：水平方向中央配置（左右マージン自動） -->
-          <div class="card text-center text-dark w-75 mx-auto mb-4">
+          <div
+            class="card text-center text-dark w-75 mx-auto mb-4 shadow-sm pb-2 bg-white rounded border border-0"
+          >
             <!-- カードヘッダー - 緑色の背景に白文字 -->
             <div class="card-header bg-success text-white">
               コーティング実績
@@ -1524,21 +1526,23 @@
           </div>
 
           <!-- キャンペーン情報カード -->
-          <div class="card text-center text-dark w-75 mx-auto mb-4">
+          <div
+            class="card text-center text-dark w-75 mx-auto mb-4 shadow-sm pb-2 bg-white rounded border border-0"
+          >
             <div class="card-header bg-success text-white">
               キャンペーン実施中
             </div>
             <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title">ヘッドライトクリーニング施工価格</h5>
+              <h5 class="card-title">レンズコーティング施工</h5>
               <p class="card-text">
-                キーパーサイトをご覧になってご予約のお客様は定価¥24,600から30%OFF!
-                ¥17,220～で施工致します。
+                キーパーサイトをご覧になってご予約のお客様は定価&yen;24,600から30%OFF!
+                &yen;17,220～で施工致します。
               </p>
             </div>
           </div>
 
           <!-- LINE登録案内カード -->
-          <div class="card text-center text-dark w-75 mx-auto">
+          <div class="card text-center text-dark w-75 mx-auto shadow-sm pb-2 bg-white rounded border border-0">
             <div class="card-header bg-success text-white">
               LINE友だち登録でガソリン、軽油が安くなる!
             </div>
@@ -1553,8 +1557,8 @@
               <!-- QRコード画像 -->
               <!-- img-thumbnail：サムネイル表示、border-success：緑色の枠線 -->
               <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/qr-code/qp-code-hashimoto.png"
-                class="img-fluid img-thumbnail border-success mb-4"
+                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/qr-code/hashimoto.png"
+                class="img-fluid img-thumbnail border-success mb-4 p-2 shadow-sm rounded border border-0"
                 style="height: 200px"
                 alt="LINEのQRコード"
               />
@@ -1566,8 +1570,9 @@
                 <!-- btn-outline-success：緑色の輪郭線のみのボタン -->
                 <a
                   class="btn btn-outline-success"
-                  href="https://line.me/R/ti/p/%40300goqwu"
-                  role="button"
+                  href="https://page.line.me/300goqwu"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >登録ボタン</a
                 >
               </div>
