@@ -1,669 +1,690 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-    crossorigin="anonymous"
-  />
-  <!-- Bootstrap Icons - アイコンフォントライブラリ -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-  />
-  <title>Dr.Driveセルフ青森橋本店</title>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons - アイコンフォントライブラリ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Dr.Driveセルフ青森橋本店</title>
+  </head>
 
-<body>
-  <!-- ヘッダーセクション - サイト上部のロゴ表示エリア -->
-  <header class="py-3">
-    <div class="container">
-      <!-- ロゴを中央揃えで配置 - text-centerクラスでテキストやインライン要素を中央揃え -->
-      <div class="text-center">
-        <a href="https://eneos-ss.com/search/ss/pc/detail.php?SCODE=206965" target="_blank" rel="noopener noreferrer">
-          <!-- img-fluidクラス：レスポンシブ対応の画像表示（親要素の幅に合わせて自動調整） -->
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/54/ENEOS_logo.svg"
-            alt="ENEOSロゴ"
-            style="height: 210px"
-            class="img-fluid"
-          />
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- /ヘッダーセクション終了 -->
-
-  <!-- ナビゲーションバー - サイト内の主要セクションへのリンクを提供 -->
-  <!-- navbar-dark：暗い背景用のナビバースタイル、bg-primary：青色の背景色 -->
-  <!-- sticky-top：スクロール時に画面上部に固定表示 -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
-    <div class="container">
-      <!-- ブランドロゴ/テキスト - サイトアイデンティティを示す要素 -->
-      <a
-        class="navbar-brand"
-        href="https://eneos-ss.com/search/ss/pc/detail.php?SCODE=206965"
-      >ENEOS</a
-      >
-
-      <!-- ハンバーガーメニュー（モバイル表示時のトグルボタン） -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbar-content"
-        aria-controls="navbar-content"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- ナビゲーションメニュー本体 - 折りたたみ可能な領域 -->
-      <div class="collapse navbar-collapse" id="navbar-content">
-        <!-- ナビゲーションリンクリスト -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- 個別メニュー項目 - active：現在のページを示す -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Top</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#coupon">Coupon</a>
-          </li>
-
-          <!-- ドロップダウンメニュー - サブメニューを含む項目 -->
-          <li class="nav-item dropdown">
-            <!-- dropdown-toggle：ドロップダウン表示用のアイコンを追加 -->
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Information
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#shop">Shop</a></li>
-              <li><a class="dropdown-item" href="#access">Access</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- メインコンテンツ領域開始 -->
-  <main>
-    <!-- メインビジュアル - カルーセルスライダー -->
-    <div class="py-4">
+  <body>
+    <!-- ヘッダーセクション - サイト上部のロゴ表示エリア -->
+    <header class="py-3">
       <div class="container">
-        <!-- カルーセル（スライドショー）コンポーネント -->
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <!-- カルーセルインジケーター（下部のドット表示） -->
-          <div class="carousel-indicators">
-            <!-- aria-current="true"は現在のスライドを示すアクセシビリティ属性 -->
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="6"
-              aria-label="Slide 7"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="7"
-              aria-label="Slide 8"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="8"
-              aria-label="Slide 9"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="9"
-              aria-label="Slide 10"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="10"
-              aria-label="Slide 11"
-            ></button>
-          </div>
-
-          <!-- カルーセルスライド群 - 実際の画像コンテンツ -->
-          <div class="carousel-inner">
-            <!-- 最初のスライドにはactiveクラスが必須（表示開始位置） -->
-            <div class="carousel-item active">
-              <!-- d-block w-100：ブロック要素化し、幅100%で表示 -->
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-001.jpg"
-                class="d-block w-100"
-                alt="店舗外観"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-002.jpg"
-                class="d-block w-100"
-                alt="サービス画像1"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-003.jpg"
-                class="d-block w-100"
-                alt="サービス画像2"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-004.jpg"
-                class="d-block w-100"
-                alt="サービス画像3"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-005.jpg"
-                class="d-block w-100"
-                alt="サービス画像4"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-006.jpg"
-                class="d-block w-100"
-                alt="サービス画像5"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-007.jpg"
-                class="d-block w-100"
-                alt="サービス画像6"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-008.jpg"
-                class="d-block w-100"
-                alt="サービス画像7"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-009.jpg"
-                class="d-block w-100"
-                alt="サービス画像8"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-010.jpg"
-                class="d-block w-100"
-                alt="サービス画像9"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-011.jpg"
-                class="d-block w-100"
-                alt="サービス画像10"
-              />
-            </div>
-          </div>
-
-          <!-- カルーセルコントロール（左右の矢印） -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
+        <!-- ロゴを中央揃えで配置 - text-centerクラスでテキストやインライン要素を中央揃え -->
+        <div class="text-center">
+          <a
+            href="https://eneos-ss.com/search/ss/pc/detail.php?SCODE=206965"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            <!-- img-fluidクラス：レスポンシブ対応の画像表示（親要素の幅に合わせて自動調整） -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/54/ENEOS_logo.svg"
+              alt="ENEOSロゴ"
+              style="height: 210px"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- /ヘッダーセクション終了 -->
+
+    <!-- ナビゲーションバー - サイト内の主要セクションへのリンクを提供 -->
+    <!-- navbar-dark：暗い背景用のナビバースタイル、bg-primary：青色の背景色 -->
+    <!-- sticky-top：スクロール時に画面上部に固定表示 -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <!-- ブランドロゴ/テキスト - サイトアイデンティティを示す要素 -->
+        <a
+          class="navbar-brand"
+          href="https://eneos-ss.com/search/ss/pc/detail.php?SCODE=206965"
+        >ENEOS</a
+        >
+
+        <!-- ハンバーガーメニュー（モバイル表示時のトグルボタン） -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+          aria-controls="navbar-content"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- ナビゲーションメニュー本体 - 折りたたみ可能な領域 -->
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <!-- ナビゲーションリンクリスト -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- 個別メニュー項目 - active：現在のページを示す -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Top</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#coupon">Coupon</a>
+            </li>
+
+            <!-- ドロップダウンメニュー - サブメニューを含む項目 -->
+            <li class="nav-item dropdown">
+              <!-- dropdown-toggle：ドロップダウン表示用のアイコンを追加 -->
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Information
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#shop">Shop</a></li>
+                <li><a class="dropdown-item" href="#access">Access</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- メインコンテンツ領域開始 -->
+    <main>
+      <!-- メインビジュアル - カルーセルスライダー -->
+      <div class="py-4">
+        <div class="container">
+          <!-- カルーセル（スライドショー）コンポーネント -->
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <!-- カルーセルインジケーター（下部のドット表示） -->
+            <div class="carousel-indicators">
+              <!-- aria-current="true"は現在のスライドを示すアクセシビリティ属性 -->
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="9"
+                aria-label="Slide 10"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="10"
+                aria-label="Slide 11"
+              ></button>
+            </div>
+
+            <!-- カルーセルスライド群 - 実際の画像コンテンツ -->
+            <div class="carousel-inner">
+              <!-- 最初のスライドにはactiveクラスが必須（表示開始位置） -->
+              <div class="carousel-item active">
+                <!-- d-block w-100：ブロック要素化し、幅100%で表示 -->
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-001.jpg"
+                  class="d-block w-100"
+                  alt="店舗外観"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-002.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-003.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-004.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-005.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像4"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-006.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像5"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-007.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像6"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-008.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像7"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-009.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像8"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-010.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像9"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/carousel/carousel-011.jpg"
+                  class="d-block w-100"
+                  alt="サービス画像10"
+                />
+              </div>
+            </div>
+
+            <!-- カルーセルコントロール（左右の矢印） -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
               <span
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-            <!-- visually-hidden：視覚的には非表示だがスクリーンリーダーには読み上げられる（アクセシビリティ対応） -->
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
+              <!-- visually-hidden：視覚的には非表示だがスクリーンリーダーには読み上げられる（アクセシビリティ対応） -->
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
               <span
                 class="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- コンテンツ01：About（紹介）セクション -->
-    <!-- bg-light：薄いグレーの背景色、py-4：上下のパディング -->
-    <div class="py-4 bg-light">
-      <!-- id="about"：ナビゲーションからのアンカーリンク先 -->
-      <section id="about">
-        <div class="container">
-          <!-- 2カラムレイアウト（テキスト＋画像） -->
-          <div class="row mb-4">
-            <!-- テキスト部分：中サイズ以上の画面で半分の幅 -->
-            <div class="col-md-6 mb-3">
-              <h3 class="mb-3">ようこそエネオスフロンティア青森橋本店へ</h3>
-              <p>店内の写真です♪</p>
-              <p>
-                当店の店舗ページを御覧頂き誠にありがとうございます。
-                当店はコーティング一級技術資格者2名が在籍しております。
-              </p>
-              <p>
-                お客様の大切なお車の塗装面に関して気になる事がございましたら何時でもお気軽にご相談下さい♪
-                コーティングの腕には自信あり、経験豊富なスタッフばかりです、ご予約お待ちしております。
-                早期予約での代車貸し出し御座います。
-              </p>
-              <!-- ボタングループ -->
-              <!-- d-grid：グリッドレイアウト、gap-2：間隔、d-md-block：中サイズ以上で横並び -->
-              <div class="d-grid gap-2 d-md-block">
-                <!-- me-md-2：中サイズ以上でボタン間の右マージン -->
-                <a
-                  href="#menu" class="btn btn-primary me-md-2"
-                >メニューを見る</a
-                >
-                <a href="#shop" class="btn btn-primary">店舗情報を見る</a>
-              </div>
-            </div>
-            <!-- 画像部分：中サイズ以上の画面で半分の幅 -->
-            <div class="col-md-6 mb-3">
-              <!-- img-fluid：レスポンシブ画像、rounded：角丸表示 -->
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/shop/shop.jpg"
-                class="img-fluid rounded"
-                alt="店舗画像"
-              />
-            </div>
-            <!-- 全幅の画像表示部分 -->
-            <div class="col-12 mt-3">
-              <!--                <img-->
-              <!--                  src=""-->
-              <!--                  class="img-fluid rounded"-->
-              <!--                  alt="スタッフ画像"-->
-              <!--                />-->
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- コンテンツ03：Menuセクション（サービスメニュー） -->
-    <div class="py-4">
-      <!-- id="menu"：ナビゲーションからのアンカーリンク先 -->
-      <section id="menu">
-        <div class="container">
-          <h3 class="mb-3">Menu</h3>
-          <div class="row">
-            <!-- フルワイドのカードレイアウト -->
-            <div class="col-md-12 mb-3">
-              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/fresh-keeper/A-11.jpg"
-                  alt="フレッシュキーパー"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex justify-content-between align-items-center"
-                >
-                  <p class="card-title text-info fw-bold h4 mb-0">
-                    フレッシュキーパー
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#fresh"
+      <!-- コンテンツ01：About（紹介）セクション -->
+      <!-- bg-light：薄いグレーの背景色、py-4：上下のパディング -->
+      <div class="py-4 bg-light">
+        <!-- id="about"：ナビゲーションからのアンカーリンク先 -->
+        <section id="about">
+          <div class="container">
+            <!-- 2カラムレイアウト（テキスト＋画像） -->
+            <div class="row mb-4">
+              <!-- テキスト部分：中サイズ以上の画面で半分の幅 -->
+              <div class="col-md-6 mb-3">
+                <h3 class="mb-3">ようこそエネオスフロンティア青森橋本店へ</h3>
+                <p>店内の写真です♪</p>
+                <p>
+                  当店の店舗ページを御覧頂き誠にありがとうございます。
+                  当店はコーティング一級技術資格者2名が在籍しております。
+                </p>
+                <p>
+                  お客様の大切なお車の塗装面に関して気になる事がございましたら何時でもお気軽にご相談下さい♪
+                  コーティングの腕には自信あり、経験豊富なスタッフばかりです、ご予約お待ちしております。
+                  早期予約での代車貸し出し御座います。
+                </p>
+                <!-- ボタングループ -->
+                <!-- d-grid：グリッドレイアウト、gap-2：間隔、d-md-block：中サイズ以上で横並び -->
+                <div class="d-grid gap-2 d-md-block">
+                  <!-- me-md-2：中サイズ以上でボタン間の右マージン -->
+                  <a
+                    href="#menu" class="btn btn-primary me-md-2"
+                  >メニューを見る</a
                   >
-                    詳しく見る
-                  </button>
+                  <a href="#shop" class="btn btn-primary">店舗情報を見る</a>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-12 mb-3">
-              <!-- カードコンポーネント：画像とテキストを組み合わせた表示 -->
-              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
-                <!-- card-img-top：カード上部に表示する画像 -->
+              <!-- 画像部分：中サイズ以上の画面で半分の幅 -->
+              <div class="col-md-6 mb-3">
+                <!-- img-fluid：レスポンシブ画像、rounded：角丸表示 -->
                 <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/crystal-keeper/A-06.jpg"
-                  alt="クリスタルキーパー"
-                  class="img-fluid card-img-top"
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/shop/shop.jpg"
+                  class="img-fluid rounded"
+                  alt="店舗画像"
                 />
-                <!-- カード内容部分 -->
-                <!-- d-flex：フレックスボックスレイアウト -->
-                <!-- justify-content-between：要素間のスペースを最大化 -->
-                <!-- align-items-center：垂直方向中央揃え -->
-                <div
-                  class="card-body d-flex justify-content-between align-items-center"
-                >
-                  <!-- text-primary：青色テキスト、fw-bold：太字（font-weight-bold→fw-bold） -->
-                  <!-- h4：見出しサイズ、mb-0：下マージンなし -->
-                  <p class="card-title text-primary fw-bold h4 mb-0">
-                    クリスタルキーパー
-                  </p>
-                  <!-- モーダル表示ボタン -->
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#crystal"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
               </div>
-            </div>
-
-            <div class="col-md-12 mb-3">
-              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/diamond-keeper/A-04.jpg"
-                  alt="ダイヤモンドキーパー"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex justify-content-between align-items-center"
-                >
-                  <p class="card-title text-warning fw-bold h4 mb-0">
-                    ダイヤモンドキーパー
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#diamond"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-12 mb-3">
-              <div class="card shadow-sm pb-2 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/eco-diamond-keeper/A-02.jpg"
-                  alt="エコダイヤキーパー"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex justify-content-between align-items-center"
-                >
-                  <p class="card-title text-success fw-bold h4 mb-0">
-                    エコダイヤキーパー
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#eco"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2カラムレイアウトの1つ目 -->
-            <div class="col-md-6 mb-3">
-              <!-- h-100：親要素の高さ100%（カードの高さを揃えるために追加） -->
-              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/iron-removal/teppun002.jpg"
-                  alt="鉄粉取り"
-                  class="img-fluid card-img-top"
-                />
-                <!-- d-flex flex-column：縦方向のフレックスボックス -->
-                <!-- align-items-center：水平方向中央揃え -->
-                <!-- justify-content-between：垂直方向の要素間スペース最大化 -->
-                <div
-                  class="card-body d-flex flex-column align-items-center justify-content-between"
-                >
-                  <p class="card-title fw-bold h5 mb-3">鉄粉取り</p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#iron-powder"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/premium-hand-car-wash/A-08.jpg"
-                  alt="手洗い洗車"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex flex-column align-items-center justify-content-between"
-                >
-                  <p class="card-title fw-bold h5 mb-3">手洗い洗車</p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#hand-wash"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/super-water-repellent-window-coating/A-16.jpg"
-                  alt="超撥水ウィンドウコーティング"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex flex-column align-items-center justify-content-between"
-                >
-                  <p class="card-title fw-bold h5 mb-3">
-                    超撥水ウィンドウコーティング
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#fluorine"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/interior-cleaning/clean-01.jpg"
-                  alt="車内清掃"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex flex-column align-items-center justify-content-between"
-                >
-                  <p class="card-title fw-bold h5 mb-3">車内清掃</p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#cleaning"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/wheel-coating/A-12.jpg"
-                  alt="ホイールコーティング"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex flex-column align-items-center justify-content-between"
-                >
-                  <p class="card-title fw-bold h5 mb-3">
-                    ホイールコーティング
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#wheel"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <div class="card h-100 shadow-sm pb-1 bg-white rounded border border-0">
-                <img
-                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/lens-coating/A-13.jpg"
-                  alt="レンズコーティング"
-                  class="img-fluid card-img-top"
-                />
-                <div
-                  class="card-body d-flex flex-column align-items-center justify-content-between"
-                >
-                  <p class="card-title h5 fw-bold mb-3">
-                    レンズコーティング
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#headlight"
-                  >
-                    詳しく見る
-                  </button>
-                </div>
+              <!-- 全幅の画像表示部分 -->
+              <div class="col-12 mt-3">
+                <!--                <img-->
+                <!--                  src=""-->
+                <!--                  class="img-fluid rounded"-->
+                <!--                  alt="スタッフ画像"-->
+                <!--                />-->
               </div>
             </div>
           </div>
-          <!-- /下段 -->
+        </section>
+      </div>
 
-          <!-- モーダルの詳細情報セクション -->
-          <!-- モーダル01：フレッシュキーパー詳細情報 -->
-          <div
-            class="modal fade"
-            id="fresh"
-            tabindex="-1"
-            aria-labelledby="fresh-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title text-info fw-bold" id="fresh-label">
-                    フレッシュキーパー
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/fresh-keeper/A-21.jpg"
-                      class="img-fluid mb-3"
-                      alt="フレッシュキーパー詳細"
-                    />
+      <!-- コンテンツ03：Menuセクション（サービスメニュー） -->
+      <div class="py-4">
+        <!-- id="menu"：ナビゲーションからのアンカーリンク先 -->
+        <section id="menu">
+          <div class="container">
+            <h3 class="mb-3">Menu</h3>
+            <div class="row">
+              <!-- フルワイドのカードレイアウト -->
+              <div class="col-md-12 mb-3">
+                <div
+                  class="card shadow-sm pb-2 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/fresh-keeper/A-11.jpg"
+                    alt="フレッシュキーパー"
+                    class="img-fluid card-img-top"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-between align-items-center"
+                  >
+                    <p class="card-title text-info fw-bold h4 mb-0">
+                      フレッシュキーパー
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#fresh"
+                    >
+                      詳しく見る
+                    </button>
                   </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                </div>
+              </div>
+
+              <div class="col-md-12 mb-3">
+                <!-- カードコンポーネント：画像とテキストを組み合わせた表示 -->
+                <div
+                  class="card shadow-sm pb-2 bg-white rounded border border-0"
+                >
+                  <!-- card-img-top：カード上部に表示する画像 -->
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/crystal-keeper/A-06.jpg"
+                    alt="クリスタルキーパー"
+                    class="img-fluid card-img-top"
+                  />
+                  <!-- カード内容部分 -->
+                  <!-- d-flex：フレックスボックスレイアウト -->
+                  <!-- justify-content-between：要素間のスペースを最大化 -->
+                  <!-- align-items-center：垂直方向中央揃え -->
+                  <div
+                    class="card-body d-flex justify-content-between align-items-center"
+                  >
+                    <!-- text-primary：青色テキスト、fw-bold：太字（font-weight-bold→fw-bold） -->
+                    <!-- h4：見出しサイズ、mb-0：下マージンなし -->
+                    <p class="card-title text-primary fw-bold h4 mb-0">
+                      クリスタルキーパー
+                    </p>
+                    <!-- モーダル表示ボタン -->
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#crystal"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 mb-3">
+                <div
+                  class="card shadow-sm pb-2 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/dia-two-keeper/A-28.jpg"
+                    alt="ダイヤツーキーパー"
+                    class="img-fluid card-img-top"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-between align-items-center"
+                  >
+                    <p class="card-title text-primary-emphasis fw-bold h4 mb-0">
+                      ダイヤツーキーパー
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dia-two"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+<!--              <div class="col-md-12 mb-3">-->
+<!--                <div-->
+<!--                  class="card shadow-sm pb-2 bg-white rounded border border-0"-->
+<!--                >-->
+<!--                  <img-->
+<!--                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/ex-keeper/A-03.jpg"-->
+<!--                    alt="EXキーパー"-->
+<!--                    class="img-fluid card-img-top"-->
+<!--                  />-->
+<!--                  <div-->
+<!--                    class="card-body d-flex justify-content-between align-items-center"-->
+<!--                  >-->
+<!--                    <p class="card-title text-dark fw-bold h4 mb-0">-->
+<!--                      EXキーパー-->
+<!--                    </p>-->
+<!--                    <button-->
+<!--                      type="button"-->
+<!--                      class="btn btn-secondary"-->
+<!--                      data-bs-toggle="modal"-->
+<!--                      data-bs-target="#ex"-->
+<!--                    >-->
+<!--                      詳しく見る-->
+<!--                    </button>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+              <!-- 2カラムレイアウトの1つ目 -->
+              <div class="col-md-6 mb-3">
+                <!-- h-100：親要素の高さ100%（カードの高さを揃えるために追加） -->
+                <div
+                  class="card h-100 shadow-sm pb-1 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/iron-removal/teppun002.jpg"
+                    alt="鉄粉取り"
+                    class="img-fluid card-img-top"
+                  />
+                  <!-- d-flex flex-column：縦方向のフレックスボックス -->
+                  <!-- align-items-center：水平方向中央揃え -->
+                  <!-- justify-content-between：垂直方向の要素間スペース最大化 -->
+                  <div
+                    class="card-body d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <p class="card-title fw-bold h5 mb-3">鉄粉取り</p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#iron-powder"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div
+                  class="card h-100 shadow-sm pb-1 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/premium-hand-car-wash/A-08.jpg"
+                    alt="手洗い洗車"
+                    class="img-fluid card-img-top"
+                  />
+                  <div
+                    class="card-body d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <p class="card-title fw-bold h5 mb-3">手洗い洗車</p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hand-wash"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div
+                  class="card h-100 shadow-sm pb-1 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/super-water-repellent-window-coating/A-16.jpg"
+                    alt="超撥水ウィンドウコーティング"
+                    class="img-fluid card-img-top"
+                  />
+                  <div
+                    class="card-body d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <p class="card-title fw-bold h5 mb-3">
+                      超撥水ウィンドウコーティング
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#fluorine"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div
+                  class="card h-100 shadow-sm pb-1 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/interior-cleaning/clean-01.jpg"
+                    alt="車内清掃"
+                    class="img-fluid card-img-top"
+                  />
+                  <div
+                    class="card-body d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <p class="card-title fw-bold h5 mb-3">車内清掃</p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cleaning"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div
+                  class="card h-100 shadow-sm pb-1 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/wheel-coating/A-12.jpg"
+                    alt="ホイールコーティング"
+                    class="img-fluid card-img-top"
+                  />
+                  <div
+                    class="card-body d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <p class="card-title fw-bold h5 mb-3">
+                      ホイールコーティング
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#wheel"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div
+                  class="card h-100 shadow-sm pb-1 bg-white rounded border border-0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/lens-coating/A-13.jpg"
+                    alt="レンズコーティング"
+                    class="img-fluid card-img-top"
+                  />
+                  <div
+                    class="card-body d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <p class="card-title h5 fw-bold mb-3">レンズコーティング</p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#headlight"
+                    >
+                      詳しく見る
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /下段 -->
+
+            <!-- モーダルの詳細情報セクション -->
+            <!-- モーダル01：フレッシュキーパー詳細情報 -->
+            <div
+              class="modal fade"
+              id="fresh"
+              tabindex="-1"
+              aria-labelledby="fresh-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-info fw-bold" id="fresh-label">
+                      フレッシュキーパー
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/fresh-keeper/A-21.jpg"
+                        class="img-fluid mb-3"
+                        alt="フレッシュキーパー詳細"
+                      />
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>サイズ</th>
                           <th>価格</th>
                           <th>車の種類</th>
                         </tr>
-                      </thead>
-                      <!-- フレッシュキーパーの価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- フレッシュキーパーの価格 -->
+                        <tbody>
                         <tr>
                           <td>SSサイズ</td>
                           <td>&yen;28,700</td>
@@ -696,72 +717,72 @@
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
                         </tr>
-                      </tbody>
-                      <!-- /フレッシュキーパーの価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /フレッシュキーパーの価格終了 -->
+                      </table>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- モーダル02：クリスタルキーパー詳細情報 -->
-          <div
-            class="modal fade"
-            id="crystal"
-            tabindex="-1"
-            aria-labelledby="crystal-label"
-            aria-hidden="true"
-          >
-            <!-- modal-dialog-centered：モーダルを垂直方向中央表示 -->
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <!-- モーダルヘッダー：タイトルと閉じるボタン -->
-                <div class="modal-header">
-                  <h5
-                    class="modal-title text-primary fw-bold"
-                    id="crystal-label"
-                  >
-                    クリスタルキーパー
-                  </h5>
-                  <!-- data-bs-dismiss="modal"：モーダルを閉じる動作を指定 -->
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <!-- モーダル本文 -->
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/crystal-keeper/B-01.jpg"
-                      class="img-fluid mb-3"
-                      alt="クリスタルキーパー詳細"
-                    />
+            <!-- モーダル02：クリスタルキーパー詳細情報 -->
+            <div
+              class="modal fade"
+              id="crystal"
+              tabindex="-1"
+              aria-labelledby="crystal-label"
+              aria-hidden="true"
+            >
+              <!-- modal-dialog-centered：モーダルを垂直方向中央表示 -->
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- モーダルヘッダー：タイトルと閉じるボタン -->
+                  <div class="modal-header">
+                    <h5
+                      class="modal-title text-primary fw-bold"
+                      id="crystal-label"
+                    >
+                      クリスタルキーパー
+                    </h5>
+                    <!-- data-bs-dismiss="modal"：モーダルを閉じる動作を指定 -->
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  <!-- table-responsive：テーブルを横スクロール可能にする（モバイル対応） -->
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                  <!-- モーダル本文 -->
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/crystal-keeper/B-01.jpg"
+                        class="img-fluid mb-3"
+                        alt="クリスタルキーパー詳細"
+                      />
+                    </div>
+                    <!-- table-responsive：テーブルを横スクロール可能にする（モバイル対応） -->
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>サイズ</th>
                           <th>価格</th>
                           <th>車の種類</th>
                         </tr>
-                      </thead>
-                      <!-- クリスタルキーパーの価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- クリスタルキーパーの価格 -->
+                        <tbody>
                         <tr>
                           <td>SSサイズ</td>
                           <td>&yen;18,200</td>
@@ -794,248 +815,248 @@
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
                         </tr>
-                      </tbody>
-                      <!-- /クリスタルキーパーの価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /クリスタルキーパーの価格終了 -->
+                      </table>
+                    </div>
                   </div>
-                </div>
-                <!-- モーダルフッター：閉じるボタンなど -->
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+                  <!-- モーダルフッター：閉じるボタンなど -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- モーダル03：ダイヤモンドキーパー詳細情報 -->
-          <div
-            class="modal fade"
-            id="diamond"
-            tabindex="-1"
-            aria-labelledby="diamond-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5
-                    class="modal-title text-warning fw-bold"
-                    id="diamond-label"
-                  >
-                    ダイヤモンドキーパー
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/diamond-keeper/B-02.jpg"
-                      class="img-fluid mb-3"
-                      alt="ダイヤモンドキーパー詳細"
-                    />
+            <!-- モーダル03：ダイヤモンドキーパー詳細情報 -->
+            <div
+              class="modal fade"
+              id="dia-two"
+              tabindex="-1"
+              aria-labelledby="dia-two-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5
+                      class="modal-title text-primary-emphasis fw-bold"
+                      id="dia-two-label"
+                    >
+                      ダイヤツーキーパー
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/dia-two-keeper/A-27.jpg"
+                        class="img-fluid mb-3"
+                        alt="ダイヤツーキーパー詳細"
+                      />
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>サイズ</th>
                           <th>価格</th>
                           <th>車の種類</th>
                         </tr>
-                      </thead>
-                      <!-- ダイヤモンドキーパーの価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- ダイヤツーキーパーの価格 -->
+                        <tbody>
                         <tr>
                           <td>SSサイズ</td>
-                          <td>&yen;52,300</td>
+                          <td>&yen;63,300</td>
                           <td>ワゴンR、ムーブetc</td>
                         </tr>
                         <tr>
                           <td>Sサイズ</td>
-                          <td>&yen;57,800</td>
+                          <td>&yen;68,800</td>
                           <td>アクア、フィットetc</td>
                         </tr>
                         <tr>
                           <td>Mサイズ</td>
-                          <td>&yen;63,400</td>
-                          <td>プリウス、インサイトetc</td>
-                        </tr>
-                        <tr>
-                          <td>Lサイズ</td>
-                          <td>&yen;67,600</td>
-                          <td>プリウスα、ウィッシュetc</td>
-                        </tr>
-                        <tr>
-                          <td>LLサイズ</td>
                           <td>&yen;74,400</td>
-                          <td>ヴェルファイヤ、エルグランドetc</td>
-                        </tr>
-                        <tr>
-                          <td>XLサイズ</td>
-                          <td>&yen;95,200</td>
-                          <td>
-                            ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
-                          </td>
-                        </tr>
-                      </tbody>
-                      <!-- /ダイヤモンドキーパーの価格終了 -->
-                    </table>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- モーダル04：エコダイヤキーパー詳細情報 -->
-          <div
-            class="modal fade"
-            id="eco"
-            tabindex="-1"
-            aria-labelledby="eco-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title text-success fw-bold" id="eco-label">
-                    エコダイヤキーパー
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/eco-diamond-keeper/A-22.jpg"
-                      class="img-fluid mb-3"
-                      alt="エコダイヤキーパー詳細"
-                    />
-                  </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>サイズ</th>
-                          <th>価格</th>
-                          <th>車の種類</th>
-                        </tr>
-                      </thead>
-                      <!-- エコダイヤキーパーの価格 -->
-                      <tbody>
-                        <tr>
-                          <td>SSサイズ</td>
-                          <td>&yen;75,800</td>
-                          <td>ワゴンR、ムーブetc</td>
-                        </tr>
-                        <tr>
-                          <td>Sサイズ</td>
-                          <td>&yen;83,800</td>
-                          <td>アクア、フィットetc</td>
-                        </tr>
-                        <tr>
-                          <td>Mサイズ</td>
-                          <td>&yen;91,900</td>
                           <td>プリウス、インサイトetc</td>
                         </tr>
                         <tr>
                           <td>Lサイズ</td>
-                          <td>&yen;97,800</td>
+                          <td>&yen;78,600</td>
                           <td>プリウスα、ウィッシュetc</td>
                         </tr>
                         <tr>
                           <td>LLサイズ</td>
-                          <td>&yen;108,000</td>
+                          <td>&yen;85,400</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
                         <tr>
                           <td>XLサイズ</td>
-                          <td>&yen;137,900</td>
+                          <td>&yen;106,200</td>
                           <td>
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
                         </tr>
-                      </tbody>
-                      <!-- /エコダイヤキーパーの価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /ダイヤツーキーパーの価格終了 -->
+                      </table>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- モーダル05：鉄粉取り詳細情報 -->
-          <div
-            class="modal fade"
-            id="iron-powder"
-            tabindex="-1"
-            aria-labelledby="iron-powder-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title fw-bold" id="iron-powder-label">
-                    鉄粉取り
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/iron-removal/img-option-05.jpg"
-                      class="img-fluid mb-3"
-                      alt="鉄粉取り詳細"
-                    />
+            <!-- モーダル04：EXキーパー詳細情報 -->
+<!--            <div-->
+<!--              class="modal fade"-->
+<!--              id="ex"-->
+<!--              tabindex="-1"-->
+<!--              aria-labelledby="ex-label"-->
+<!--              aria-hidden="true"-->
+<!--            >-->
+<!--              <div class="modal-dialog modal-dialog-centered">-->
+<!--                <div class="modal-content">-->
+<!--                  <div class="modal-header">-->
+<!--                    <h5 class="modal-title text-dark fw-bold" id="ex-label">-->
+<!--                      EXキーパー-->
+<!--                    </h5>-->
+<!--                    <button-->
+<!--                      type="button"-->
+<!--                      class="btn-close"-->
+<!--                      data-bs-dismiss="modal"-->
+<!--                      aria-label="Close"-->
+<!--                    ></button>-->
+<!--                  </div>-->
+<!--                  <div class="modal-body">-->
+<!--                    <div class="text-center">-->
+<!--                      <img-->
+<!--                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/ex-keeper/A-24.jpg"-->
+<!--                        class="img-fluid mb-3"-->
+<!--                        alt="EXキーパー詳細"-->
+<!--                      />-->
+<!--                    </div>-->
+<!--                    <div class="table-responsive">-->
+<!--                      <table class="table table-striped">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                          <th>サイズ</th>-->
+<!--                          <th>価格</th>-->
+<!--                          <th>車の種類</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        &lt;!&ndash; EXキーパーの価格 &ndash;&gt;-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                          <td>SSサイズ</td>-->
+<!--                          <td>&yen;75,800</td>-->
+<!--                          <td>ワゴンR、ムーブetc</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                          <td>Sサイズ</td>-->
+<!--                          <td>&yen;83,800</td>-->
+<!--                          <td>アクア、フィットetc</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                          <td>Mサイズ</td>-->
+<!--                          <td>&yen;91,900</td>-->
+<!--                          <td>プリウス、インサイトetc</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                          <td>Lサイズ</td>-->
+<!--                          <td>&yen;97,800</td>-->
+<!--                          <td>プリウスα、ウィッシュetc</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                          <td>LLサイズ</td>-->
+<!--                          <td>&yen;108,000</td>-->
+<!--                          <td>ヴェルファイヤ、エルグランドetc</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                          <td>XLサイズ</td>-->
+<!--                          <td>&yen;137,900</td>-->
+<!--                          <td>-->
+<!--                            ハイエース(ロングハイルーフ)、ハイラックス、X7 etc-->
+<!--                          </td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                        &lt;!&ndash; /EXキーパーの価格終了 &ndash;&gt;-->
+<!--                      </table>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="modal-footer">-->
+<!--                    <button-->
+<!--                      type="button"-->
+<!--                      class="btn btn-primary"-->
+<!--                      data-bs-dismiss="modal"-->
+<!--                    >-->
+<!--                      閉じる-->
+<!--                    </button>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+            <!-- モーダル05：鉄粉取り詳細情報 -->
+            <div
+              class="modal fade"
+              id="iron-powder"
+              tabindex="-1"
+              aria-labelledby="iron-powder-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="iron-powder-label">
+                      鉄粉取り
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/iron-removal/img-option-05.jpg"
+                        class="img-fluid mb-3"
+                        alt="鉄粉取り詳細"
+                      />
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>サイズ</th>
                           <th>価格</th>
                           <th>車の種類</th>
                         </tr>
-                      </thead>
-                      <!-- 鉄粉取りの価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- 鉄粉取りの価格 -->
+                        <tbody>
                         <tr>
                           <td>SSサイズ</td>
                           <td>&yen;4,400</td>
@@ -1061,64 +1082,64 @@
                           <td>&yen;7,700</td>
                           <td>ヴェルファイヤ、エルグランドetc</td>
                         </tr>
-                      </tbody>
-                      <!-- /鉄粉取りの価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /鉄粉取りの価格終了 -->
+                      </table>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- モーダル06：手洗い洗車詳細情報 -->
-          <div
-            class="modal fade"
-            id="hand-wash"
-            tabindex="-1"
-            aria-labelledby="hand-wash-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title fw-bold" id="hand-wash-label">
-                    手洗い洗車
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/premium-hand-car-wash/B-06.jpg"
-                      class="img-fluid mb-3"
-                      alt="手洗い洗車詳細"
-                    />
+            <!-- モーダル06：手洗い洗車詳細情報 -->
+            <div
+              class="modal fade"
+              id="hand-wash"
+              tabindex="-1"
+              aria-labelledby="hand-wash-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="hand-wash-label">
+                      手洗い洗車
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/premium-hand-car-wash/B-06.jpg"
+                        class="img-fluid mb-3"
+                        alt="手洗い洗車詳細"
+                      />
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>サイズ</th>
                           <th>価格</th>
                           <th>車の種類</th>
                         </tr>
-                      </thead>
-                      <!-- 手洗い洗車の価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- 手洗い洗車の価格 -->
+                        <tbody>
                         <tr>
                           <td>SSサイズ</td>
                           <td>&yen;2,740</td>
@@ -1151,67 +1172,67 @@
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
                         </tr>
-                      </tbody>
-                      <!-- /手洗い洗車の価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /手洗い洗車の価格終了 -->
+                      </table>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- モーダル07：超撥水ウィンドウコーティング詳細情報 -->
-          <div
-            class="modal fade"
-            id="fluorine"
-            tabindex="-1"
-            aria-labelledby="fluorine-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title fw-bold" id="fluorine-label">
-                    超撥水ウィンドウコーティング
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/super-water-repellent-window-coating/B-09.jpg"
-                      class="img-fluid mb-3"
-                      alt="超撥水ウィンドウコーティング詳細"
-                    />
+            <!-- モーダル07：超撥水ウィンドウコーティング詳細情報 -->
+            <div
+              class="modal fade"
+              id="fluorine"
+              tabindex="-1"
+              aria-labelledby="fluorine-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="fluorine-label">
+                      超撥水ウィンドウコーティング
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/super-water-repellent-window-coating/B-09.jpg"
+                        class="img-fluid mb-3"
+                        alt="超撥水ウィンドウコーティング詳細"
+                      />
+                    </div>
 
-                  <!-- フロントガラスのみ詳細情報 -->
-                  <h5 class="py-2">フロントガラスのみ</h5>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                    <!-- フロントガラスのみ詳細情報 -->
+                    <h5 class="py-2">フロントガラスのみ</h5>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>サイズ</th>
                           <th>価格</th>
                           <th>車の種類</th>
                         </tr>
-                      </thead>
-                      <!-- フロントガラスのみの価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- フロントガラスのみの価格 -->
+                        <tbody>
                         <tr>
                           <td>SSサイズ</td>
                           <td>&yen;3,720</td>
@@ -1244,23 +1265,23 @@
                             ハイエース(ロングハイルーフ)、ハイラックス、X7 etc
                           </td>
                         </tr>
-                      </tbody>
-                      <!-- /フロントガラスのみの価格終了 -->
-                    </table>
-                  </div>
-                  <!-- フロントガラス全面詳細情報 -->
-                  <h5 class="py-2">窓ガラス全面</h5>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                        </tbody>
+                        <!-- /フロントガラスのみの価格終了 -->
+                      </table>
+                    </div>
+                    <!-- フロントガラス全面詳細情報 -->
+                    <h5 class="py-2">窓ガラス全面</h5>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>サイズ</th>
                           <th>価格</th>
                           <th>車の種類</th>
                         </tr>
-                      </thead>
-                      <!-- 窓ガラス全面の価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- 窓ガラス全面の価格 -->
+                        <tbody>
                         <tr>
                           <td>SSサイズ</td>
                           <td>&yen;8,270</td>
@@ -1293,63 +1314,63 @@
                             ハイエース(ロングハイルーフ)、ハイラックス、X7etc
                           </td>
                         </tr>
-                      </tbody>
-                      <!-- /窓ガラス全面の価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /窓ガラス全面の価格終了 -->
+                      </table>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- モーダル08：車内清掃詳細情報 -->
-          <div
-            class="modal fade"
-            id="cleaning"
-            tabindex="-1"
-            aria-labelledby="cleaning-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title fw-bold" id="cleaning-label">
-                    車内清掃
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/interior-cleaning/clean-02.jpg"
-                      class="img-fluid mb-3"
-                      alt="車内清掃詳細"
-                    />
+            <!-- モーダル08：車内清掃詳細情報 -->
+            <div
+              class="modal fade"
+              id="cleaning"
+              tabindex="-1"
+              aria-labelledby="cleaning-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="cleaning-label">
+                      車内清掃
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/interior-cleaning/clean-02.jpg"
+                        class="img-fluid mb-3"
+                        alt="車内清掃詳細"
+                      />
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>室内</th>
                           <th>価格</th>
                         </tr>
-                      </thead>
-                      <!-- 車内清掃の価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- 車内清掃の価格 -->
+                        <tbody>
                         <tr>
                           <td>1列</td>
                           <td>&yen;1,100</td>
@@ -1362,63 +1383,63 @@
                           <td>3列</td>
                           <td>&yen;2,680</td>
                         </tr>
-                      </tbody>
-                      <!-- /車内清掃の価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /車内清掃の価格終了 -->
+                      </table>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- モーダル09：ホイールコーティング施工詳細情報 -->
-          <div
-            class="modal fade"
-            id="wheel"
-            tabindex="-1"
-            aria-labelledby="wheel-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title fw-bold" id="wheel-label">
-                    ホイールコーティング施工
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/wheel-coating/B-08.jpg"
-                      class="img-fluid mb-3"
-                      alt="ホイールコーティング詳細"
-                    />
+            <!-- モーダル09：ホイールコーティング施工詳細情報 -->
+            <div
+              class="modal fade"
+              id="wheel"
+              tabindex="-1"
+              aria-labelledby="wheel-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="wheel-label">
+                      ホイールコーティング施工
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/wheel-coating/B-08.jpg"
+                        class="img-fluid mb-3"
+                        alt="ホイールコーティング詳細"
+                      />
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
                         <tr>
                           <th>タイヤサイズ</th>
                           <th>表４本</th>
                         </tr>
-                      </thead>
-                      <!-- ホイールコーティングの価格 -->
-                      <tbody>
+                        </thead>
+                        <!-- ホイールコーティングの価格 -->
+                        <tbody>
                         <tr>
                           <td>～15インチ</td>
                           <td>&yen;10,700</td>
@@ -1431,179 +1452,181 @@
                           <td>20インチ～</td>
                           <td>&yen;14,300</td>
                         </tr>
-                      </tbody>
-                      <!-- /ホイールコーティングの価格終了 -->
-                    </table>
+                        </tbody>
+                        <!-- /ホイールコーティングの価格終了 -->
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    閉じる
-                  </button>
+              </div>
+            </div>
+
+            <!-- モーダル10：レンズコーティング施工詳細情報 -->
+            <div
+              class="modal fade"
+              id="headlight"
+              tabindex="-1"
+              aria-labelledby="headlight-label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="headlight-label">
+                      レンズコーティング施工
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <img
+                        src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/lens-coating/B-10.jpg"
+                        class="img-fluid mb-3"
+                        alt="レンズコーティング詳細"
+                      />
+                    </div>
+                    <p>
+                      黄色く変色したり、曇ったヘッドライトの光沢を回復させガラスコーティングで強力に保護します。
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      閉じる
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+      </div>
 
-          <!-- モーダル10：レンズコーティング施工詳細情報 -->
-          <div
-            class="modal fade"
-            id="headlight"
-            tabindex="-1"
-            aria-labelledby="headlight-label"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title fw-bold" id="headlight-label">
-                    レンズコーティング施工
+      <!-- コンテンツ04：Couponセクション（お知らせ＆キャンペーン情報） -->
+      <div class="py-4 bg-light">
+        <!-- id="coupon"：ナビゲーションからのアンカーリンク先 -->
+        <section id="coupon">
+          <div class="container">
+            <h3 class="text-center mb-4">お知らせ</h3>
+
+            <!-- 実績情報カード -->
+            <!-- w-75：幅75%、mx-auto：水平方向中央配置（左右マージン自動） -->
+            <div
+              class="card text-center text-dark w-75 mx-auto mb-4 shadow-sm pb-2 bg-white rounded border border-0"
+            >
+              <!-- カードヘッダー - 緑色の背景に白文字 -->
+              <div class="card-header bg-success text-white">
+                コーティング実績
+              </div>
+              <!-- カード本文 - 縦方向フレックスボックスで中央揃え -->
+              <div class="card-body d-flex flex-column align-items-center">
+                <h2 class="card-title">
+                  令和4年コーティング<br />施工台数315台
+                </h2>
+                <p class="card-text">
+                  私たちコーティング技術認定者にお任せ下さい!
+                </p>
+              </div>
+            </div>
+
+            <!-- キャンペーン情報カード -->
+            <div
+              class="card text-center text-dark w-75 mx-auto mb-4 shadow-sm pb-2 bg-white rounded border border-0"
+            >
+              <div class="card-header bg-success text-white">
+                キャンペーン実施中
+              </div>
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">レンズコーティング施工</h5>
+                <p class="card-text">
+                  キーパーサイトをご覧になってご予約のお客様は定価&yen;24,600から30%OFF!
+                  &yen;17,220～で施工致します。
+                </p>
+              </div>
+            </div>
+
+            <!-- LINE登録案内カード -->
+            <div
+              class="card text-center text-dark w-75 mx-auto shadow-sm pb-2 bg-white rounded border border-0"
+            >
+              <div class="card-header bg-success text-white">
+                LINE友だち登録でガソリン、軽油が安くなる!
+              </div>
+              <div class="card-body">
+                <!-- 上部テキスト -->
+                <div class="d-flex flex-column align-items-center">
+                  <h5 class="card-title mb-3">
+                    お得な情報満載!プレゼントクーポン配信中!
                   </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+                  <h5 class="card-text mb-4">ぜひ給油前の登録を!!</h5>
                 </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <img
-                      src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/keeper/lens-coating/B-10.jpg"
-                      class="img-fluid mb-3"
-                      alt="レンズコーティング詳細"
-                    />
-                  </div>
-                  <p>
-                    黄色く変色したり、曇ったヘッドライトの光沢を回復させガラスコーティングで強力に保護します。
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
+                <!-- QRコード画像 -->
+                <!-- img-thumbnail：サムネイル表示、border-success：緑色の枠線 -->
+                <img
+                  src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/qr-code/hashimoto.png"
+                  class="img-fluid img-thumbnail border-success mb-4 p-2 shadow-sm rounded border border-0"
+                  style="height: 200px"
+                  alt="LINEのQRコード"
+                />
+                <!-- 下部テキストとボタン -->
+                <div class="d-flex flex-column align-items-center">
+                  <h5 class="mb-3">
+                    QRコードをスマホで読み込むかまたは、ボタンをクリックで登録できます。
+                  </h5>
+                  <!-- btn-outline-success：緑色の輪郭線のみのボタン -->
+                  <a
+                    class="btn btn-outline-success"
+                    href="https://page.line.me/300goqwu"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >登録ボタン</a
                   >
-                    閉じる
-                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
 
-    <!-- コンテンツ04：Couponセクション（お知らせ＆キャンペーン情報） -->
-    <div class="py-4 bg-light">
-      <!-- id="coupon"：ナビゲーションからのアンカーリンク先 -->
-      <section id="coupon">
-        <div class="container">
-          <h3 class="text-center mb-4">お知らせ</h3>
-
-          <!-- 実績情報カード -->
-          <!-- w-75：幅75%、mx-auto：水平方向中央配置（左右マージン自動） -->
-          <div
-            class="card text-center text-dark w-75 mx-auto mb-4 shadow-sm pb-2 bg-white rounded border border-0"
-          >
-            <!-- カードヘッダー - 緑色の背景に白文字 -->
-            <div class="card-header bg-success text-white">
-              コーティング実績
-            </div>
-            <!-- カード本文 - 縦方向フレックスボックスで中央揃え -->
-            <div class="card-body d-flex flex-column align-items-center">
-              <h2 class="card-title">
-                令和4年コーティング<br />施工台数315台
-              </h2>
-              <p class="card-text">
-                私たちコーティング技術認定者にお任せ下さい!
-              </p>
-            </div>
-          </div>
-
-          <!-- キャンペーン情報カード -->
-          <div
-            class="card text-center text-dark w-75 mx-auto mb-4 shadow-sm pb-2 bg-white rounded border border-0"
-          >
-            <div class="card-header bg-success text-white">
-              キャンペーン実施中
-            </div>
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title">レンズコーティング施工</h5>
-              <p class="card-text">
-                キーパーサイトをご覧になってご予約のお客様は定価&yen;24,600から30%OFF!
-                &yen;17,220～で施工致します。
-              </p>
-            </div>
-          </div>
-
-          <!-- LINE登録案内カード -->
-          <div class="card text-center text-dark w-75 mx-auto shadow-sm pb-2 bg-white rounded border border-0">
-            <div class="card-header bg-success text-white">
-              LINE友だち登録でガソリン、軽油が安くなる!
-            </div>
-            <div class="card-body">
-              <!-- 上部テキスト -->
-              <div class="d-flex flex-column align-items-center">
-                <h5 class="card-title mb-3">
-                  お得な情報満載!プレゼントクーポン配信中!
-                </h5>
-                <h5 class="card-text mb-4">ぜひ給油前の登録を!!</h5>
-              </div>
-              <!-- QRコード画像 -->
-              <!-- img-thumbnail：サムネイル表示、border-success：緑色の枠線 -->
-              <img
-                src="https://raw.githubusercontent.com/eneos-hashimoto/keeper-blog/main/src/images/qr-code/hashimoto.png"
-                class="img-fluid img-thumbnail border-success mb-4 p-2 shadow-sm rounded border border-0"
-                style="height: 200px"
-                alt="LINEのQRコード"
-              />
-              <!-- 下部テキストとボタン -->
-              <div class="d-flex flex-column align-items-center">
-                <h5 class="mb-3">
-                  QRコードをスマホで読み込むかまたは、ボタンをクリックで登録できます。
-                </h5>
-                <!-- btn-outline-success：緑色の輪郭線のみのボタン -->
-                <a
-                  class="btn btn-outline-success"
-                  href="https://page.line.me/300goqwu"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >登録ボタン</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- コンテンツ05：Informationセクション（店舗情報とアクセス） -->
-    <div class="py-4">
-      <!-- id="information"：ナビゲーションからのアンカーリンク先 -->
-      <section id="information">
-        <div class="container">
-          <h3 class="mb-3">Information</h3>
-          <p>
-            エネオスフロンティア青森橋本店一同笑顔で皆様のご来店お待ちしております
-          </p>
-          <!-- 2カラムレイアウト -->
-          <div class="row">
-            <!-- 左側セクション：店舗情報 -->
-            <div class="col-md-6">
-              <!-- id="shop"：ドロップダウンナビからのアンカーリンク先 -->
-              <section id="shop">
-                <p class="mb-3 h4">Shop</p>
-                <!-- 店舗情報の表 -->
-                <!-- table-responsive：テーブルを横スクロール可能にする（モバイル対応） -->
-                <div class="table-responsive">
-                  <!-- table-hover：行にホバーエフェクトを追加 -->
-                  <table class="table table-hover">
-                    <tbody>
+      <!-- コンテンツ05：Informationセクション（店舗情報とアクセス） -->
+      <div class="py-4">
+        <!-- id="information"：ナビゲーションからのアンカーリンク先 -->
+        <section id="information">
+          <div class="container">
+            <h3 class="mb-3">Information</h3>
+            <p>
+              エネオスフロンティア青森橋本店一同笑顔で皆様のご来店お待ちしております
+            </p>
+            <!-- 2カラムレイアウト -->
+            <div class="row">
+              <!-- 左側セクション：店舗情報 -->
+              <div class="col-md-6">
+                <!-- id="shop"：ドロップダウンナビからのアンカーリンク先 -->
+                <section id="shop">
+                  <p class="mb-3 h4">Shop</p>
+                  <!-- 店舗情報の表 -->
+                  <!-- table-responsive：テーブルを横スクロール可能にする（モバイル対応） -->
+                  <div class="table-responsive">
+                    <!-- table-hover：行にホバーエフェクトを追加 -->
+                    <table class="table table-hover">
+                      <tbody>
                       <tr>
                         <th>店名</th>
                         <td>エネオスフロンティア青森橋本店</td>
@@ -1636,39 +1659,38 @@
                         <th>場所</th>
                         <td>NTT青森支店裏、元商工会議所跡地</td>
                       </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            </div>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              </div>
 
-            <!-- 右側セクション：アクセスマップ -->
-            <div class="col-md-6">
-              <!-- id="access"：ドロップダウンナビからのアンカーリンク先 -->
-              <section id="access">
-                <p class="mb-3 h4">Access</p>
-                <!-- Googleマップ埋め込み -->
-                <div class="ratio ratio-4x3">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96616.42988940749!2d140.750848!3d40.822177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf551021f15077b9d!2zRU5FT1MgRHIuRHJpdmXjgrvjg6vjg5XpnZLmo67mqYvmnKzlupcgLyDjiLFFTkVPU-ODleODreODs-ODhuOCo-OCoiDmnbHljJfjgqvjg7Pjg5Hjg4vjg7w!5e0!3m2!1sja!2sjp!4v1579826302366!5m2!1sja!2sjp"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </section>
+              <!-- 右側セクション：アクセスマップ -->
+              <div class="col-md-6">
+                <!-- id="access"：ドロップダウンナビからのアンカーリンク先 -->
+                <section id="access">
+                  <p class="mb-3 h4">Access</p>
+                  <!-- Googleマップ埋め込み -->
+                  <div class="ratio ratio-4x3">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96616.42988940749!2d140.750848!3d40.822177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf551021f15077b9d!2zRU5FT1MgRHIuRHJpdmXjgrvjg6vjg5XpnZLmo67mqYvmnKzlupcgLyDjiLFFTkVPU-ODleODreODs-ODhuOCo-OCoiDmnbHljJfjgqvjg7Pjg5Hjg4vjg7w!5e0!3m2!1sja!2sjp!4v1579826302366!5m2!1sja!2sjp"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-    <!-- /コンテンツ05終了 -->
-  </main>
-  <!-- /メインコンテンツ終了 -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"
-  ></script>
-</body>
+        </section>
+      </div>
+      <!-- /コンテンツ05終了 -->
+    </main>
+    <!-- /メインコンテンツ終了 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
